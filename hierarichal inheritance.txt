@@ -1,0 +1,17 @@
+#hierarichical inheritance
+
+class number:
+    def __init__(self,num):
+        self.num=num
+    def get_number(self):
+        return self.num
+class double(number):
+    def result(self):
+        return self.get_number()*2
+class triple(number):
+    def result(self):
+        return self.get_number()*3
+d=double(4)
+print("double",d.result())
+t=triple(4)
+print("triple",t.result())
